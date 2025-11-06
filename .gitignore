@@ -3,6 +3,10 @@
 .build/
 build/
 
+# Textbooks
+mathematics/
+science/
+
 # Target Directories
 debug/
 target/
