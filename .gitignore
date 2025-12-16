@@ -1,20 +1,25 @@
 # Build Directories
-/binary
+binary/
+bin/
 .build/
 build/
+bld/
 
 # Include Directories
 include/
+inc/
 library/
+lib/
 package/
-
-# Textbook Directories
-mathematics/
-science/
+pkg/
 
 # Target Directories
 debug/
 target/
+
+# Textbook Directories
+mathematics/
+science/
 
 # Prerequisites
 *.d
