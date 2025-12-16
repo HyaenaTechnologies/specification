@@ -3,16 +3,18 @@
 .build/
 build/
 
-# Textbooks
+# Include Directories
+include/
+library/
+package/
+
+# Textbook Directories
 mathematics/
 science/
 
 # Target Directories
 debug/
 target/
-
-# Rust Format Backup Files
-**/*.rs.bk
 
 # Prerequisites
 *.d
