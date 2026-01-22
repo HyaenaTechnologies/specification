@@ -1,4 +1,5 @@
 // Data Interchange File Format
+// File Extension: .data, .data-interchange
 
 // This is a Comment
 
@@ -26,11 +27,17 @@ structure: MyDataStructure = {
 	character 32bit: char32 = 'c',
 	character 64bit: char64 = d,
 	character 128bit: char128 = 'e',
-	string: str = "string",
+	string ascii: str = "string",
+	string utf8: str8 = "string",
+	string utf16: str16 = "string",
+	string utf32: str32 = "string",
+	string utf64: str64 = "string",
+	string utf128: str128 = "string",
 	array<integer 8bit>: my_array = [];,
 	array(5, 2)<integer 8bit>: 2d_array = [];,
 	map<integer 8bit, string>: hash_map = [()];,
-	structure: MyStruct = {};
+	structure: MyStruct = {};,
+	enumerator: MyEnum = {};
 };
 
 // Enumerator for Constants
@@ -43,6 +50,26 @@ enumerator: MyEnumerator = {
 	FIFTH_VALUE = 4
 };
 
+// Boolean Declaration
+// Syntax - type: name = value;
+boolean: my_boolean = true;
+
+// Character Declaration
+// Syntax - type: name = value;
+character 8bit: my_character = 's';
+
+// Float Declaration
+// Syntax - type: name = value;
+float 8bit: my_float = 1.0;
+
+// Integer Declaration
+// Syntax - type: name = value;
+unsigned integer 8bit: my_integer = 1;
+
+// String Declaration
+// Syntax - type: name = value;
+string utf8: my_string = "string";
+
 // One Dimensional Array
 // Syntax - type<type>: name = [values];
 array<unsigned integer 8bit>: my_array = [
@@ -50,15 +77,11 @@ array<unsigned integer 8bit>: my_array = [
 	2,
 	3,
 	4,
-	5,
-	6,
-	7,
-	8,
-	9
+	5
 ];
 
 // Two Dimensional Array
-// Syntax - type(dimension)<type>: name = [value, value];
+// Syntax - type(dimension)<type>: name = [values];
 array(5, 2)<unsigned integer 8bit>: my_array = [
 	1, 5
 	2, 4
@@ -74,10 +97,43 @@ map<unsigned integer 8bit, string>: my_map = [
 	(2, "string"),
 	(3, "string"),
 	(4, "string"),
-	(5, "string"),
-	(6, "string"),
-	(7, "string"),
-	(8, "string"),
-	(9, "string")
+	(5, "string")
 ];
+
+// Data Structure Schema Declaration
+// Syntax - type: Name = {values};
+structure: MyDataStructure = {
+	unsigned integer 8bit: int8,
+	unsigned integer 16bit: int16,
+	unsigned integer 32bit: int32,
+	unsigned integer 64bit: int64,
+	unsigned integer 128bit: int128,
+	signed integer 8bit: int8,
+	signed integer 16bit: int16,
+	signed integer 32bit: int32,
+	signed integer 64bit: int64,
+	signed integer 128bit: int128,
+	float 8bit: float8,
+	float 16bit: float16,
+	float 32bit: float32,
+	float 64bit: float64,
+	float 128bit: float128,
+	boolean: bool,
+	character 8bit: char8,
+	character 16bit: char16,
+	character 32bit: char32,
+	character 64bit: char64,
+	character 128bit: char128,
+	string ascii: str,
+	string utf8: str8,
+	string utf16: str16,
+	string utf32: str32,
+	string utf64: str64,
+	string utf128: str128,
+	array<integer 8bit>: my_array,
+	array(5, 2)<integer 8bit>: 2d_array,
+	map<integer 8bit, string>: hash_map,
+	structure: MyStruct,
+	enumerator: MyEnum
+};
 
