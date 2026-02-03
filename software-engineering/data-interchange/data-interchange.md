@@ -9,12 +9,10 @@
 // Data Interchange Source File: .data
 // .data Files May be Dynamically Typed
 // .data Files May be Statically Typed
-// .data Files Must be Included
-// .data Files Cannot be Excluded
+// .data Files are Required
 // .schema Files Must be Statically Typed
 // .schema Files Cannot be Dynamically Typed
-// .schema Files May be Included
-// .schema Files May be Excluded
+// .schema Files are Optional
 
 // This is a Comment
 
@@ -28,18 +26,7 @@ DataStructure = {
 	string = "string";
 	array = [];
 	hash_map = [()];
-	DataStructure = {};
-	EnumeratorType = {};
-}
-
-// Enumerator Initialization
-// Syntax - Name = {values}
-EnumeratorType = {
-	FIRST_VALUE = 0,
-	SECOND_VALUE = 1,
-	THIRD_VALUE = 2,
-	FOURTH_VALUE = 3,
-	FIFTH_VALUE = 4
+	DataStructure = {};	
 }
 
 // Boolean Initialization
@@ -106,18 +93,19 @@ hash_map = [
 // Data Interchange Source File: .data
 // .data Files May be Dynamically Typed
 // .data Files May be Statically Typed
-// .data Files Must be Included
-// .data Files Cannot be Excluded
+// .data Files are Required
 // .schema Files Must be Statically Typed
 // .schema Files Cannot be Dynamically Typed
-// .schema Files May be Included
-// .schema Files May be Excluded
+// .schema Files are Optional
 
 // This is a Comment
+
+// Option Type Syntax - option<type|type> name = value;
 
 // Data Structure Declaration
 // May be Declared with Initialized Fields
 // Syntax - type Name = {values}
+// Optional Field Syntax - optional<type> name;
 struct DataStructure = {
 	option<uint8|null> unsigned_integer_8bit;
 	uint16 unsigned_integer_16bit;
@@ -150,11 +138,11 @@ struct DataStructure = {
 // May be Declared with Initialized Fields
 // Syntax - type Name = {values}
 enum EnumeratorType = {
-	FIRST_VALUE, // value = 0
-	SECOND_VALUE, // value = 1
-	THIRD_VALUE, // value = 2
-	FOURTH_VALUE, // value = 3
-	FIFTH_VALUE // value = 4
+	FIRST_VALUE, // value = 0;
+	SECOND_VALUE, // value = 1;
+	THIRD_VALUE, // value = 2;
+	FOURTH_VALUE, // value = 3;
+	FIFTH_VALUE // value = 4;
 }
 
 // Data Structure Initialization
