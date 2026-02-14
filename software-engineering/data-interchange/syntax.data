@@ -14,6 +14,7 @@
 // Data Structure Initialization
 // Syntax - Name = {fields}
 DataStructure = {
+	byte_type = null // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
 	integer_type = 1;
 	float_type = 1.0;
 	boolean_type = true;

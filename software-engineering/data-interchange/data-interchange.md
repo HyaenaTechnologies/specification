@@ -19,6 +19,7 @@
 // Data Structure Initialization
 // Syntax - Name = {fields}
 DataStructure = {
+	byte_type = null // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
 	integer_type = 1;
 	float_type = 1.0;
 	boolean_type = true;
@@ -102,28 +103,25 @@ map_type = [
 
 // This is a Comment
 
-// Option Type Syntax - option<type|type> name = value;
-
 // Data Structure Declaration
 // May be Declared with Initialized Fields
 // Syntax - type Name = {fields}
-// Optional Field Syntax - option<type> name;
 struct DataStructure = {
-	option<byte|null> byte_type; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-	usize unsigned_integer_size; // Platform Dependent: x86/AMD32, x86_64/AMD64, AARCH32/ARM32, AARCH64/ARM64, RISCV32, RISCV64
+	byte byte_type; // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
+	usize unsigned_integer_size; // Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISCV32, RISCV64
 	uint8 unsigned_integer_8bit;
 	uint16 unsigned_integer_16bit;
 	uint32 unsigned_integer_32bit;
 	uint64 unsigned_integer_64bit;
-	option<uint128> unsigned_integer_128bit;
-	option<int8|null> signed_integer_8bit;
+	uint128 unsigned_integer_128bit;
+	int8 signed_integer_8bit;
 	int16 signed_integer_16bit;
 	int32 signed_integer_32bit;
 	int64 signed_integer_64bit;
-	option<int128> signed_integer_128bit;
-	option<float32|null> float_32bit;
+	int128 signed_integer_128bit;
+	float32 float_32bit;
 	float64 float_64bit;
-	option<float128> float_128bit;
+	float128 float_128bit;
 	bool boolean_type;
 	char character_type; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
 	str string_type; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
@@ -135,8 +133,8 @@ struct DataStructure = {
 // Data Structure Initialization
 // Syntax - type name = {fields}
 DataStructure structure_type = {
-	byte byte_type = null; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-	usize unsigned_integer_size = 0; // Platform Dependent: x86/AMD32, x86_64/AMD64, AARCH32/ARM32, AARCH64/ARM64, RISCV32, RISCV64
+	byte byte_type = null; // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
+	usize unsigned_integer_size = 0; // Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISCV32, RISCV64
 	uint8 unsigned_integer_8bit = 1;
 	uint16 unsigned_integer_16bit = 2;
 	uint32 unsigned_integer_32bit = 3;
