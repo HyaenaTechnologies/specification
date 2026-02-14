@@ -61,6 +61,7 @@ string_type = "string";
 // Syntax - name = [values]
 // OR
 // Null Syntax - name = [null]
+// Array Index Syntax - name[index]
 array_type = [
 	1,
 	2,
@@ -73,6 +74,7 @@ array_type = [
 // Syntax - name = [(key:value)]
 // OR
 // Null Syntax - name = [(null:null)]
+// Hash Map Index Syntax - name[key]
 map_type = [
 	(1:"string"),
 	(2:"string"),
