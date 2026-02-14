@@ -114,6 +114,7 @@ struct DataStructure = {
 	uint32 unsigned_integer_32bit;
 	uint64 unsigned_integer_64bit;
 	uint128 unsigned_integer_128bit;
+	isize signed_integer_size; // Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISCV32, RISCV64
 	int8 signed_integer_8bit;
 	int16 signed_integer_16bit;
 	int32 signed_integer_32bit;
@@ -140,7 +141,8 @@ DataStructure structure_type = {
 	uint32 unsigned_integer_32bit = 3;
 	uint64 unsigned_integer_64bit = 4;
 	uint128 unsigned_integer_128bit = 5;
-	int8 signed_integer_8bit = null;
+	isize signed_integer_size = null; // Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISCV32, RISCV64
+	int8 signed_integer_8bit = -1;
 	int16 signed_integer_16bit = -2;
 	int32 signed_integer_32bit = -3;
 	int64 signed_integer_64bit = -4;
