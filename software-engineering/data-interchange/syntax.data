@@ -5,7 +5,7 @@
 // Schema Definition Header File: .schema
 // .data Files May be Dynamically Typed
 // .data Files May be Statically Typed
-// .data Files are Required
+// .data || .binary Files are Required
 // .schema Files Must be Statically Typed
 // .schema Files Cannot be Dynamically Typed
 // .schema Files are Optional
@@ -14,8 +14,8 @@
 
 // Data Structure Declaration
 // May be Declared with Initialized Fields
-// Syntax - typedef Name type = {fields}
-typedef DataStructure struct = {
+// Syntax - Name {fields};
+DataStructure {
 	byte_type; // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
 	integer_type;
 	float_type;
@@ -24,12 +24,12 @@ typedef DataStructure struct = {
 	string_type; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
 	array_type;
 	map_type;
-	structure_type DataStructure;
+	structure_type;
 };
 
 // Data Structure Initialization
-// Syntax - var name type = {fields}
-var structure_type DataStructure = {
+// Syntax - name = type {fields};
+structure_type = DataStructure {
 	byte_type = null; // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
 	integer_type = 1;
 	float_type = 1.0;
@@ -38,47 +38,47 @@ var structure_type DataStructure = {
 	string_type = "string"; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
 	array_type = [];
 	map_type = [()];
-	structure_type DataStructure = {};
+	structure_type = DataStructure {};
 };
 
 // Boolean Initialization
-// Syntax - var name = value;
+// Syntax - name = value;
 // OR
-// Null Syntax - var name = null;
-var boolean_type = true;
+// Null Syntax - name = null;
+boolean_type = true;
 
 // Character Initialization
-// Syntax - var name = value;
+// Syntax - name = value;
 // OR
-// Null Syntax - var name = null;
+// Null Syntax - name = null;
 // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-var character_type = 'a';
+character_type = 'a';
 
 // Float Initialization
-// Syntax - var name = value;
+// Syntax - name = value;
 // OR
-// Null Syntax - var name = null;
-var float_type = 1.0;
+// Null Syntax - name = null;
+float_type = 1.0;
 
 // Integer Initialization
-// Syntax - var name = value;
+// Syntax - name = value;
 // OR
-// Null Syntax - var name = null;
-var integer_type = 1;
+// Null Syntax - name = null;
+integer_type = 1;
 
 // String Initialization
-// Syntax - var name = value;
+// Syntax - name = value;
 // OR
-// Null Syntax - var name = null;
+// Null Syntax - name = null;
 // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-var string_type = "string";
+string_type = "string";
 
 // Array Initialization
-// Syntax - var name = [values]
+// Syntax - name = [values];
 // OR
-// Null Syntax - var name = [null]
+// Null Syntax - name = [null];
 // Array Index Syntax - name[index]
-var array_type = [
+array_type = [
 	1,
 	2,
 	3,
@@ -87,11 +87,11 @@ var array_type = [
 ];
 
 // Hash Map Initialization
-// Syntax - var name = [(key:value)]
+// Syntax - name = [(key:value)];
 // OR
-// Null Syntax - var name = [(null:null)]
+// Null Syntax - name = [(null:null)];
 // Hash Map Index Syntax - name[key]
-var map_type = [
+map_type = [
 	(1:"string"),
 	(2:"string"),
 	(3:"string"),

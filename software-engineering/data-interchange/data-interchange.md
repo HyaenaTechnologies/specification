@@ -6,7 +6,7 @@
 - Schema Definition Header File: .schema
 - .data Files May be Dynamically Typed
 - .data Files May be Statically Typed
-- .data Files are Required
+- .data || .binary Files are Required
 - .schema Files Must be Statically Typed
 - .schema Files Cannot be Dynamically Typed
 - .schema Files are Optional
@@ -17,8 +17,8 @@
 ```shell
 // Data Structure Declaration
 // May be Declared with Initialized Fields
-// Syntax - typedef Name type = {fields}
-typedef DataStructure struct = {
+// Syntax - Name {fields};
+DataStructure {
 	byte_type; // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
 	integer_type;
 	float_type;
@@ -27,12 +27,12 @@ typedef DataStructure struct = {
 	string_type; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
 	array_type;
 	map_type;
-	structure_type DataStructure;
+	structure_type;
 };
 
 // Data Structure Initialization
-// Syntax - var name type = {fields}
-var structure_type DataStructure = {
+// Syntax - name = type {fields};
+structure_type = DataStructure {
 	byte_type = null; // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
 	integer_type = 1;
 	float_type = 1.0;
@@ -41,47 +41,47 @@ var structure_type DataStructure = {
 	string_type = "string"; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
 	array_type = [];
 	map_type = [()];
-	structure_type DataStructure = {};
+	structure_type = DataStructure {};
 };
 
 // Boolean Initialization
-// Syntax - var name = value;
+// Syntax - name = value;
 // OR
-// Null Syntax - var name = null;
-var boolean_type = true;
+// Null Syntax - name = null;
+boolean_type = true;
 
 // Character Initialization
-// Syntax - var name = value;
+// Syntax - name = value;
 // OR
-// Null Syntax - var name = null;
+// Null Syntax - name = null;
 // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-var character_type = 'a';
+character_type = 'a';
 
 // Float Initialization
-// Syntax - var name = value;
+// Syntax - name = value;
 // OR
-// Null Syntax - var name = null;
-var float_type = 1.0;
+// Null Syntax - name = null;
+float_type = 1.0;
 
 // Integer Initialization
-// Syntax - var name = value;
+// Syntax - name = value;
 // OR
-// Null Syntax - var name = null;
-var integer_type = 1;
+// Null Syntax - name = null;
+integer_type = 1;
 
 // String Initialization
-// Syntax - var name = value;
+// Syntax - name = value;
 // OR
-// Null Syntax - var name = null;
+// Null Syntax - name = null;
 // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-var string_type = "string";
+string_type = "string";
 
 // Array Initialization
-// Syntax - var name = [values]
+// Syntax - name = [values];
 // OR
-// Null Syntax - var name = [null]
+// Null Syntax - name = [null];
 // Array Index Syntax - name[index]
-var array_type = [
+array_type = [
 	1,
 	2,
 	3,
@@ -90,11 +90,11 @@ var array_type = [
 ];
 
 // Hash Map Initialization
-// Syntax - var name = [(key:value)]
+// Syntax - name = [(key:value)];
 // OR
-// Null Syntax - var name = [(null:null)]
+// Null Syntax - name = [(null:null)];
 // Hash Map Index Syntax - name[key]
-var map_type = [
+map_type = [
 	(1:"string"),
 	(2:"string"),
 	(3:"string"),
@@ -108,103 +108,103 @@ var map_type = [
 ```shell
 // Data Structure Declaration
 // May be Declared with Initialized Fields
-// Syntax - typedef Name type = {fields}
-typedef DataStructure struct = {
-	byte_type byte; // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
-	unsigned_integer_size usize; // Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISCV32, RISCV64
-	unsigned_integer_8bit uint8;
-	unsigned_integer_16bit uint16;
-	unsigned_integer_32bit uint32;
-	unsigned_integer_64bit uint64;
-	unsigned_integer_128bit uint128;
-	signed_integer_size isize; // Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISCV32, RISCV64
-	signed_integer_8bit int8;
-	signed_integer_16bit int16;
-	signed_integer_32bit int32;
-	signed_integer_64bit int64;
-	signed_integer_128bit int128;
-	float_32bit float32;
-	float_64bit float64;
-	float_128bit float128;
-	boolean_type bool;
-	character_type char; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-	string_type str; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-	array_type [5]uint8;
-	list_type list<uint8>;
-	map_type map<uint8, str>;
-	structure_type DataStructure;
+// Syntax - type Name {fields};
+struct DataStructure {
+	byte byte_type; // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
+	usize unsigned_integer_size; // Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISCV32, RISCV64
+	uint8 unsigned_integer_8bit;
+	uint16 unsigned_integer_16bit;
+	uint32 unsigned_integer_32bit;
+	uint64 unsigned_integer_64bit;
+	uint128 unsigned_integer_128bit;
+	isize signed_integer_size; // Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISCV32, RISCV64
+	int8 signed_integer_8bit;
+	int16 signed_integer_16bit;
+	int32 signed_integer_32bit;
+	int64 signed_integer_64bit;
+	int128 signed_integer_128bit;
+	float32 float_32bit;
+	float64 float_64bit;
+	float128 float_128bit;
+	bool boolean_type;
+	char character_type; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
+	str string_type; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
+	[5]uint8 array_type;
+	list<uint8> list_type;
+	map<uint8, str> map_type;
+	DataStructure structure_type;
 };
 
 // Data Structure Initialization
-// Syntax - var name type = {fields}
-var structure_type DataStructure = {
-	byte_type byte = null; // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
-	unsigned_integer_size usize = 0; // Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISCV32, RISCV64
-	unsigned_integer_8bit uint8 = 1;
-	unsigned_integer_16bit uint16 = 2;
-	unsigned_integer_32bit uint32 = 3;
-	unsigned_integer_64bit uint64 = 4;
-	unsigned_integer_128bit uint128 = 5;
-	signed_integer_size isize = null; // Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISCV32, RISCV64
-	signed_integer_8bit int8 = -1;
-	signed_integer_16bit int16 = -2;
-	signed_integer_32bit int32 = -3;
-	signed_integer_64bit int64 = -4;
-	signed_integer_128bit int128 = -5;
-	float_32bit float32 = null;
-	float_64bit float64 = 2.0;
-	float_128bit float128 = 3.0;
-	boolean_type bool = true;
-	character_type char = 'a'; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-	string_type str = "string"; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-	array_type [5]uint8 = [];
-	list_type list<uint8> = [];
-	map_type map<uint8, str> = [()];
-	structure_type DataStructure = {};
+// Syntax - type name = type {fields};
+DataStructure structure_type = DataStructure {
+	byte byte_type = null; // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
+	usize unsigned_integer_size = 0; // Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISCV32, RISCV64
+	uint8 unsigned_integer_8bit = 1;
+	uint16 unsigned_integer_16bit = 2;
+	uint32 unsigned_integer_32bit = 3;
+	uint64 unsigned_integer_64bit = 4;
+	uint128 unsigned_integer_128bit = 5;
+	isize signed_integer_size = null; // Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISCV32, RISCV64
+	int8 signed_integer_8bit = -1;
+	int16 signed_integer_16bit = -2;
+	int32 signed_integer_32bit = -3;
+	int64 signed_integer_64bit = -4;
+	int128 signed_integer_128bit = -5;
+	float32 float_32bit = null;
+	float64 float_64bit = 2.0;
+	float128 float_128bit = 3.0;
+	bool boolean_type = true;
+	char character_type = 'a'; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
+	str string_type = "string"; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
+	[5]uint8 array_type = [];
+	list<uint8> list_type = [];
+	map<uint8, str> map_type = [()];
+	DataStructure structure_type = DataStructure {};
 };
 
 // Boolean Initialization
-// Syntax - var name type = value;
+// Syntax - type name = value;
 // OR
-// Null Syntax - var name type = null;
-var boolean_type bool = true;
+// Null Syntax - type name = null;
+bool boolean_type = true;
 
 // Character Initialization
-// Syntax - var name type = value;
+// Syntax - type name = value;
 // OR
-// Null Syntax - var name type = null;
+// Null Syntax - type name = null;
 // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-var character_type char = 'a';
+char character_type = 'a';
 
 // Float Initialization
-// Syntax - var name type = value;
+// Syntax - type name = value;
 // OR
-// Null Syntax - var name type = null;
-var float_32bit float32 = 1.0;
+// Null Syntax - type name = null;
+float32 float_32bit = 1.0;
 
 // Integer Initialization
-// Syntax - var name type = value;
+// Syntax - type name = value;
 // OR
-// Null Syntax - var name type = null;
-var unsigned_integer_8bit uint8 = 1;
+// Null Syntax - type name = null;
+uint8 unsigned_integer_8bit = 1;
 
 // String Initialization
-// Syntax - var name type = value;
+// Syntax - type name = value;
 // OR
-// Null Syntax - var name type = null;
+// Null Syntax - type name = null;
 // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-var string_type str = "string";
+str string_type = "string";
 
 // Array Initialization
-// Syntax - var name [length]type = [values]
+// Syntax - [length]type name = [values];
 // OR
-// Multi-Dimensional Syntax - var name [rows][columns]type = [values]
+// Multi-Dimensional Syntax - [rows][columns]type name = [values];
 // OR
-// Unknown Size Syntax - var name []type = [values]
+// Unknown Size Syntax - []type name = [values];
 // OR
-// Null Syntax - var name [length]type = [null]
+// Null Syntax - [length]type name = [null];
 // Array Index Syntax - name[index]
-var array_type [5]uint8 = [
+[5]uint8 array_type = [
 	1,
 	2,
 	3,
@@ -213,11 +213,11 @@ var array_type [5]uint8 = [
 ];
 
 // List Initialization
-// Syntax - var name type<type> = [values]
+// Syntax - type<type> name = [values];
 // OR
-// Null Syntax - var name type<type> = [null]
+// Null Syntax - type<type> name = [null];
 // List Index Syntax - name[index]
-var list_type list<uint8> = [
+list<uint8> list_type = [
 	1,
 	2,
 	3,
@@ -226,11 +226,11 @@ var list_type list<uint8> = [
 ];
 
 // Hash Map Initialization
-// Syntax - var name type<type, type> = [(key:value)]
+// Syntax - type<type, type> name = [(key:value)];
 // OR
-// Null Syntax - var name type<type, type> = [(null:null)]
+// Null Syntax - type<type, type> name = [(null:null)];
 // Hash Map Index Syntax - name[key]
-var map_type map<uint8, str> = [
+map<uint8, str> map_type = [
 	(1:"string"),
 	(2:"string"),
 	(3:"string"),
