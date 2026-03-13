@@ -1,0 +1,186 @@
+# Programming Language
+
+- Code Source File: .source
+- Binary Format Source File: .binary
+- .source Files Must be Statically Typed
+- .source Files Cannot be Dynamically Typed
+- .source || .binary Files are Required
+- // This is a Comment
+
+## Language Syntax
+
+```shell
+// Data Structure Declaration
+// May be Declared with Initialized Fields
+// Syntax - type Name {fields};
+struct DataStructure {
+	byte byte_type; // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
+	usize unsigned_integer_size; // Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISCV32, RISCV64
+	uint8 unsigned_integer_8bit;
+	uint16 unsigned_integer_16bit;
+	uint32 unsigned_integer_32bit;
+	uint64 unsigned_integer_64bit;
+	uint128 unsigned_integer_128bit;
+	isize signed_integer_size; // Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISCV32, RISCV64
+	int8 signed_integer_8bit;
+	int16 signed_integer_16bit;
+	int32 signed_integer_32bit;
+	int64 signed_integer_64bit;
+	int128 signed_integer_128bit;
+	float32 float_32bit;
+	float64 float_64bit;
+	float128 float_128bit;
+	bool boolean_type;
+	char character_type; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
+	str string_type; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
+	[5]uint8 array_type;
+	list<uint8> list_type;
+	map<uint8, str> map_type;
+	DataStructure structure_type;
+};
+
+// Data Structure Initialization
+// Syntax - type name = type {fields};
+DataStructure structure_type = DataStructure {
+	byte byte_type = null; // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
+	usize unsigned_integer_size = 0; // Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISCV32, RISCV64
+	uint8 unsigned_integer_8bit = 1;
+	uint16 unsigned_integer_16bit = 2;
+	uint32 unsigned_integer_32bit = 3;
+	uint64 unsigned_integer_64bit = 4;
+	uint128 unsigned_integer_128bit = 5;
+	isize signed_integer_size = null; // Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISCV32, RISCV64
+	int8 signed_integer_8bit = -1;
+	int16 signed_integer_16bit = -2;
+	int32 signed_integer_32bit = -3;
+	int64 signed_integer_64bit = -4;
+	int128 signed_integer_128bit = -5;
+	float32 float_32bit = null;
+	float64 float_64bit = 2.0;
+	float128 float_128bit = 3.0;
+	bool boolean_type = true;
+	char character_type = 'a'; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
+	str string_type = "string"; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
+	[5]uint8 array_type = [];
+	list<uint8> list_type = [];
+	map<uint8, str> map_type = [()];
+	DataStructure structure_type = DataStructure {};
+};
+
+// Boolean Initialization
+// Syntax - type name = value;
+// OR
+// Null Syntax - type name = null;
+bool boolean_type = true;
+
+// Character Initialization
+// Syntax - type name = value;
+// OR
+// Null Syntax - type name = null;
+// Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
+char character_type = 'a';
+
+// Float Initialization
+// Syntax - type name = value;
+// OR
+// Null Syntax - type name = null;
+float32 float_32bit = 1.0;
+
+// Integer Initialization
+// Syntax - type name = value;
+// OR
+// Null Syntax - type name = null;
+uint8 unsigned_integer_8bit = 1;
+
+// String Initialization
+// Syntax - type name = value;
+// OR
+// Null Syntax - type name = null;
+// Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
+str string_type = "string";
+
+// Array Initialization
+// Syntax - [length]type name = [values];
+// OR
+// Multi-Dimensional Syntax - [rows][columns]type name = [values];
+// OR
+// Unknown Size Syntax - []type name = [values];
+// OR
+// Null Syntax - [length]type name = [null];
+// Array Index Syntax - name[index]
+[5]uint8 array_type = [
+	1,
+	2,
+	3,
+	4,
+	5
+];
+
+// List Initialization
+// Syntax - type<type> name = [values];
+// OR
+// Null Syntax - type<type> name = [null];
+// List Index Syntax - name[index]
+list<uint8> list_type = [
+	1,
+	2,
+	3,
+	4,
+	5
+];
+
+// Hash Map Initialization
+// Syntax - type<type, type> name = [(key:value)];
+// OR
+// Null Syntax - type<type, type> name = [(null:null)];
+// Hash Map Index Syntax - name[key]
+map<uint8, str> map_type = [
+	(1:"string"),
+	(2:"string"),
+	(3:"string"),
+	(4:"string"),
+	(5:"string")
+];
+
+// Function Declaration
+// Syntax - type name(type parameter) {scope};
+str conditional_function(int8 first_parameter, int8 second_parameter) {
+	// Variable Declaration
+	str result;
+	// Variable Initialization
+	int8 number = first_parameter - second_parameter;
+
+	// If Conditional Statement
+	if (number < 1) {
+		result = "failed";
+	} else {
+		number = number + 1;
+		result = "success";
+	}
+
+	return result;
+};
+
+// Function Declaration
+// Syntax - type name(type parameter) {scope};
+uint8 loop_function(int8 first_parameter, int8 second_parameter) {
+	// Variable Declaration
+	uint8 value;
+	// Variable Initialization
+	value = 0;
+	int8 number = first_parameter - second_parameter;
+
+	// While Loop Statement
+	while (number < 1) {
+		number = number + 1;
+	}
+
+	// For Loop Statement
+	for (number > 1; number < 10; number++) {
+		value = value + 1;
+	}
+
+	return value;
+};
+```
+

@@ -1,7 +1,6 @@
 # Data Interchange Format
 
-- File Extension: .data, .binary, .schema
-- Data Interchange Source File: .data
+- Data Source File: .data
 - Binary Format Source File: .binary
 - Schema Definition Header File: .schema
 - .data Files May be Dynamically Typed
