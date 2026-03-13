@@ -151,6 +151,7 @@ str conditional_function(int8 first_parameter, int8 second_parameter) {
 	int8 number = first_parameter - second_parameter;
 
 	// If Conditional Statement
+	// Syntax - statement (condition) {scope} branch {scope};
 	if (number < 1) {
 		result = "failed";
 	} else {
@@ -171,11 +172,13 @@ uint8 loop_function(int8 first_parameter, int8 second_parameter) {
 	int8 number = first_parameter - second_parameter;
 
 	// While Loop Statement
+	// Syntax - statement (condition) {scope};
 	while (number < 1) {
 		number = number + 1;
 	}
 
 	// For Loop Statement
+	// Syntax - statement (initial_condition; evalutation_condition; iteration_result) {scope};
 	for (number > 1; number < 10; number++) {
 		value = value + 1;
 	}
