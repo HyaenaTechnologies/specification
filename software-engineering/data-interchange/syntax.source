@@ -141,6 +141,10 @@ map<uint8, str> map_type = [
 	(5:"string")
 ];
 
+// Generic Type Keyword - type
+// Pointer Operator - *
+// Reference Pointer Operator - &
+
 // Function Declaration
 // Syntax - type name(type parameter) {scope};
 str conditional_function(int8 first_parameter, int8 second_parameter) {

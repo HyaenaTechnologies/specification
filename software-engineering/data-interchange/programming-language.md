@@ -12,6 +12,17 @@
 ## Language Syntax
 
 ```shell
+// Programming Language
+// Code Source File: .source
+// Binary Format Source File: .binary
+// .source Files Must be Statically Typed
+// .source Files Cannot be Dynamically Typed
+// .binary Files Must be Statically Typed
+// .binary Files Cannot be Dynamically Typed
+// .source || .binary Files are Required
+
+// This is a Comment
+
 // Data Structure Declaration
 // May be Declared with Initialized Fields
 // Syntax - type Name {fields};
@@ -144,6 +155,10 @@ map<uint8, str> map_type = [
 	(5:"string")
 ];
 
+// Generic Type Keyword - type
+// Pointer Operator - *
+// Reference Pointer Operator - &
+
 // Function Declaration
 // Syntax - type name(type parameter) {scope};
 str conditional_function(int8 first_parameter, int8 second_parameter) {
@@ -168,9 +183,14 @@ str conditional_function(int8 first_parameter, int8 second_parameter) {
 // Syntax - type name(type parameter) {scope};
 uint8 loop_function(int8 first_parameter, int8 second_parameter) {
 	// Variable Declaration
-	uint8 value;
+	usize index;
+	[3]uint8 array_type = [
+		0,
+		1,
+		2
+	];
 	// Variable Initialization
-	value = 0;
+	index = 0;
 	int8 number = first_parameter - second_parameter;
 
 	// While Loop Statement
@@ -181,8 +201,8 @@ uint8 loop_function(int8 first_parameter, int8 second_parameter) {
 
 	// For Loop Statement
 	// Syntax - statement (initial_condition; evalutation_condition; iteration_increment) {scope};
-	for (number > 1; number < 10; number++) {
-		value = value + 1;
+	for (index = 0; index < 2; index++) {
+		array_type[index] = array_type[index + 1];
 	}
 
 	return value;

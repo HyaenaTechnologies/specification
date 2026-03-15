@@ -9,6 +9,15 @@
 
 ## Binary Format Syntax
 
+## Numeral Systems (Power Of)
+
+- Binary: Base 2
+- Quaternary: Base 4
+- Octal: Base 8
+- Decimal: Base 10
+- Hexadecimal: Base 16
+
 ```shell
 
 ```
+
