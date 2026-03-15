@@ -166,7 +166,7 @@ str conditional_function(int8 first_parameter, int8 second_parameter) {
 uint8 loop_function(int8 first_parameter, int8 second_parameter) {
 	// Variable Declaration
 	usize index;
-	[3]str array_type = [
+	[3]uint8 array_type = [
 		0,
 		1,
 		2
