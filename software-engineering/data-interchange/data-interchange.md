@@ -79,7 +79,6 @@ string_type = "string";
 // Syntax - name = [values];
 // OR
 // Null Syntax - name = [null];
-// Array Index Syntax - name[index]
 array_type = [
 	1,
 	2,
@@ -92,7 +91,6 @@ array_type = [
 // Syntax - name = [(key:value)];
 // OR
 // Null Syntax - name = [(null:null)];
-// Hash Map Index Syntax - name[key]
 map_type = [
 	(1:"string"),
 	(2:"string"),
@@ -202,7 +200,6 @@ str string_type = "string";
 // Unknown Size Syntax - []type name = [values];
 // OR
 // Null Syntax - [length]type name = [null];
-// Array Index Syntax - name[index]
 [5]uint8 array_type = [
 	1,
 	2,
@@ -215,7 +212,6 @@ str string_type = "string";
 // Syntax - type<type> name = [values];
 // OR
 // Null Syntax - type<type> name = [null];
-// List Index Syntax - name[index]
 list<uint8> list_type = [
 	1,
 	2,
@@ -228,7 +224,6 @@ list<uint8> list_type = [
 // Syntax - type<type, type> name = [(key:value)];
 // OR
 // Null Syntax - type<type, type> name = [(null:null)];
-// Hash Map Index Syntax - name[key]
 map<uint8, str> map_type = [
 	(1:"string"),
 	(2:"string"),

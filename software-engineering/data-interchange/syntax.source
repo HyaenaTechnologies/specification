@@ -175,7 +175,7 @@ uint8 loop_function(int8 first_parameter, int8 second_parameter) {
 	}
 
 	// For Loop Statement
-	// Syntax - statement (initial_condition; evalutation_condition; iteration_result) {scope};
+	// Syntax - statement (initial_condition; evalutation_condition; iteration_increment) {scope};
 	for (number > 1; number < 10; number++) {
 		value = value + 1;
 	}
