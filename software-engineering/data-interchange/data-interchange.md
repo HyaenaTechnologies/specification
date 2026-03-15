@@ -5,6 +5,8 @@
 - Schema Definition Header File: .schema
 - .data Files May be Dynamically Typed
 - .data Files May be Statically Typed
+- .binary Files Must be Statically Typed
+- .binary Files Cannot be Dynamically Typed
 - .data || .binary Files are Required
 - .schema Files Must be Statically Typed
 - .schema Files Cannot be Dynamically Typed

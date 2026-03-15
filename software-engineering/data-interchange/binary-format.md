@@ -1,0 +1,14 @@
+# Binary Format
+
+- Binary Format
+- Binary Source File: .binary
+- .binary Files Must be Statically Typed
+- .binary Files Cannot be Dynamically Typed
+- .binary Files are Required
+- // This is a Comment
+
+## Binary Format Syntax
+
+```shell
+
+```

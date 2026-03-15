@@ -4,6 +4,8 @@
 - Binary Format Source File: .binary
 - .source Files Must be Statically Typed
 - .source Files Cannot be Dynamically Typed
+- .binary Files Must be Statically Typed
+- .binary Files Cannot be Dynamically Typed
 - .source || .binary Files are Required
 - // This is a Comment
 

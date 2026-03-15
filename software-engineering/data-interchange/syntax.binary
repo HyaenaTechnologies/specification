@@ -1,14 +1,8 @@
 // Binary Format
 // Binary Source File: .binary
-// Data Interchange Source File: .data
-// Code Source File: .source
-// Schema Definition Header File: .schema
-// .data Files May be Dynamically Typed
-// .data Files May be Statically Typed
-// .data || .source || .binary Files are Required
-// .schema Files Must be Statically Typed
-// .schema Files Cannot be Dynamically Typed
-// .schema Files are Optional
+// .binary Files Must be Statically Typed
+// .binary Files Cannot be Dynamically Typed
+// .binary Files are Required
 
 // This is a Comment
 
