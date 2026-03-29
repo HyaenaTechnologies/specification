@@ -1,0 +1,154 @@
+// Scripting Language
+// Code Source File: .script
+// Binary Format Source File: .binary
+// .script Files Must be Dynamically Typed
+// .script Files Cannot be Statically Typed
+// .binary Files Must be Statically Typed
+// .binary Files Cannot be Dynamically Typed
+// .script || .binary Files are Required
+
+// This is a Comment
+
+// Data Structure Keyword - struct
+// For Loop Keyword - for
+// Function Keyword - func
+// Else Condition Keyword - else
+// If Condition Keyword - if
+// Variable Keyword - var
+// While Loop Keyword - while
+
+// Data Structure Declaration
+// May be Declared with Initialized Fields
+// Syntax - struct Name {fields};
+struct DataStructure {
+	byte_type; // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
+	integer_type;
+	float_type;
+	boolean_type;
+	character_type; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
+	string_type; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
+	array_type;
+	map_type;
+	structure_type;
+};
+
+// Data Structure Initialization
+// Syntax - var name = type {fields};
+var structure_type = DataStructure {
+	byte_type = null; // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
+	integer_type = 1;
+	float_type = 1.0;
+	boolean_type = true;
+	character_type = 'a'; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
+	string_type = "string"; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
+	array_type = [];
+	map_type = [()];
+	structure_type = DataStructure {};
+};
+
+// Boolean Initialization
+// Syntax - var name = value;
+// OR
+// Null Syntax - var name = null;
+var boolean_type = true;
+
+// Character Initialization
+// Syntax - var name = value;
+// OR
+// Null Syntax - var name = null;
+// Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
+var character_type = 'a';
+
+// Float Initialization
+// Syntax - var name = value;
+// OR
+// Null Syntax - var name = null;
+var float_type = 1.0;
+
+// Integer Initialization
+// Syntax - var name = value;
+// OR
+// Null Syntax - var name = null;
+var integer_type = 1;
+
+// String Initialization
+// Syntax - var name = value;
+// OR
+// Null Syntax - var name = null;
+// Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
+var string_type = "string";
+
+// Array Initialization
+// Syntax - var name = [values];
+// OR
+// Null Syntax - var name = [null];
+var array_type = [
+	1,
+	2,
+	3,
+	4,
+	5
+];
+
+// Hash Map Initialization
+// Syntax - var name = [(key:value)];
+// OR
+// Null Syntax - var name = [(null:null)];
+var map_type = [
+	(1:"string"),
+	(2:"string"),
+	(3:"string"),
+	(4:"string"),
+	(5:"string")
+];
+
+// Function Declaration
+// Syntax - func name(parameter) {scope};
+func conditional_function(first_parameter, second_parameter) {
+	// Variable Declaration
+	var result;
+	// Variable Initialization
+	var number = first_parameter - second_parameter;
+
+	// If Conditional Statement
+	// Syntax - statement (condition) {scope} branch {scope};
+	if (number < 1) {
+		result = "failed";
+	} else {
+		number = number + 1;
+		result = "success";
+	}
+
+	return result;
+};
+
+// Function Declaration
+// Syntax - func name(parameter) {scope};
+func loop_function(first_parameter, second_parameter) {
+	// Variable Declaration
+	var index;
+	
+	// Variable Initialization
+	var array_type = [
+		0,
+		1,
+		2
+	];
+	var number = first_parameter - second_parameter;
+	index = 0;
+
+	// While Loop Statement
+	// Syntax - statement (condition) {scope};
+	while (number < 1) {
+		number = number + 1;
+	}
+
+	// For Loop Statement
+	// Syntax - statement (initial_condition; evalutation_condition; iteration_increment) {scope};
+	for (index = 0; index < 2; index++) {
+		array_type[index] = array_type[index + 1];
+	}
+
+	return value;
+};
+

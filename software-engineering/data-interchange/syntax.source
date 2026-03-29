@@ -174,7 +174,7 @@ func conditional_function(first_parameter int8, second_parameter int8) str {
 
 // Function Declaration
 // Syntax - func name(parameter type) type {scope};
-func loop_function(first_parameter int8 , second_parameter int8) uint8 {
+func loop_function(first_parameter int8, second_parameter int8) uint8 {
 	// Variable Declaration
 	var index usize;
 	
