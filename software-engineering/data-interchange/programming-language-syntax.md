@@ -12,116 +12,116 @@
 ## Language Syntax
 
 ```shell
-// Programming Language
-// Code Source File: .source
-// Binary Format Source File: .binary
-// .source Files Must be Statically Typed
-// .source Files Cannot be Dynamically Typed
-// .binary Files Must be Statically Typed
-// .binary Files Cannot be Dynamically Typed
-// .source || .binary Files are Required
-
-// This is a Comment
+// Data Structure Keyword - struct
+// For Loop Keyword - for
+// Function Keyword - func
+// Else Condition Keyword - else
+// Generic Type Keyword - type
+// If Condition Keyword - if
+// Reference Pointer Operator - &
+// Target Pointer Operator - *
+// Variable Keyword - var
+// While Loop Keyword - while
 
 // Data Structure Declaration
 // May be Declared with Initialized Fields
-// Syntax - type Name {fields};
-struct DataStructure {
-	byte byte_type; // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
-	usize unsigned_integer_size; // Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISCV32, RISCV64
-	uint8 unsigned_integer_8bit;
-	uint16 unsigned_integer_16bit;
-	uint32 unsigned_integer_32bit;
-	uint64 unsigned_integer_64bit;
-	uint128 unsigned_integer_128bit;
-	isize signed_integer_size; // Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISCV32, RISCV64
-	int8 signed_integer_8bit;
-	int16 signed_integer_16bit;
-	int32 signed_integer_32bit;
-	int64 signed_integer_64bit;
-	int128 signed_integer_128bit;
-	float32 float_32bit;
-	float64 float_64bit;
-	float128 float_128bit;
-	bool boolean_type;
-	char character_type; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-	str string_type; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-	[5]uint8 array_type;
-	list<uint8> list_type;
-	map<uint8, str> map_type;
-	DataStructure structure_type;
+// Syntax - type Name struct {fields};
+type DataStructure struct {
+	byte_type byte; // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
+	unsigned_integer_size usize; // Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISC32, RISC64
+	unsigned_integer_8bit uint8;
+	unsigned_integer_16bit uint16;
+	unsigned_integer_32bit uint32;
+	unsigned_integer_64bit uint64;
+	unsigned_integer_128bit uint128;
+	signed_integer_size isize; // Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISC32, RISC64
+	signed_integer_8bit int8;
+	signed_integer_16bit int16;
+	signed_integer_32bit int32;
+	signed_integer_64bit int64;
+	signed_integer_128bit int128;
+	float_32bit float32;
+	float_64bit float64;
+	float_128bit float128;
+	boolean_type bool;
+	character_type char; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
+	string_type str; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
+	array_type [5]uint8;
+	list_type list<uint8>;
+	map_type map<uint8, str>;
+	structure_type DataStructure;
 };
 
 // Data Structure Initialization
-// Syntax - type name = type {fields};
-DataStructure structure_type = DataStructure {
-	byte byte_type = null; // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
-	usize unsigned_integer_size = 0; // Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISCV32, RISCV64
-	uint8 unsigned_integer_8bit = 1;
-	uint16 unsigned_integer_16bit = 2;
-	uint32 unsigned_integer_32bit = 3;
-	uint64 unsigned_integer_64bit = 4;
-	uint128 unsigned_integer_128bit = 5;
-	isize signed_integer_size = null; // Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISCV32, RISCV64
-	int8 signed_integer_8bit = -1;
-	int16 signed_integer_16bit = -2;
-	int32 signed_integer_32bit = -3;
-	int64 signed_integer_64bit = -4;
-	int128 signed_integer_128bit = -5;
-	float32 float_32bit = null;
-	float64 float_64bit = 2.0;
-	float128 float_128bit = 3.0;
-	bool boolean_type = true;
-	char character_type = 'a'; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-	str string_type = "string"; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-	[5]uint8 array_type = [];
-	list<uint8> list_type = [];
-	map<uint8, str> map_type = [()];
-	DataStructure structure_type = DataStructure {};
+// Syntax - var name type = type {fields};
+var structure_type DataStructure = DataStructure {
+	byte_type byte = null; // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
+	unsigned_integer_size usize = 0; // Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISC32, RISC64
+	unsigned_integer_8bit uint8 = 1;
+	unsigned_integer_16bit uint16 = 2;
+	unsigned_integer_32bit uint32 = 3;
+	unsigned_integer_64bit uint64 = 4;
+	unsigned_integer_128bit uint128 = 5;
+	signed_integer_size isize = null; // Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISC32, RISC64
+	signed_integer_8bit int8 = -1;
+	signed_integer_16bit int16 = -2;
+	signed_integer_32bit int32 = -3;
+	signed_integer_64bit int64 = -4;
+	signed_integer_128bit int128 = -5;
+	float_32bit float32 = null;
+	float_64bit float64 = 2.0;
+	float_128bit float128 = 3.0;
+	boolean_type bool = true;
+	character_type char = 'a'; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
+	string_type str = "string"; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
+	array_type [5]uint8 = [];
+	list_type list<uint8> = [];
+	map_type map<uint8, str> = [()];
+	structure_type DataStructure = DataStructure {};
 };
 
 // Boolean Initialization
-// Syntax - type name = value;
+// Syntax - var name type = value;
 // OR
-// Null Syntax - type name = null;
-bool boolean_type = true;
+// Null Syntax - var name type = null;
+var boolean_type bool = true;
 
 // Character Initialization
-// Syntax - type name = value;
+// Syntax - var name type = value;
 // OR
-// Null Syntax - type name = null;
+// Null Syntax - var name type = null;
 // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-char character_type = 'a';
+var character_type char = 'a';
 
 // Float Initialization
-// Syntax - type name = value;
+// Syntax - var name type = value;
 // OR
-// Null Syntax - type name = null;
-float32 float_32bit = 1.0;
+// Null Syntax - var name type = null;
+var float_32bit float32 = 1.0;
 
 // Integer Initialization
-// Syntax - type name = value;
+// Syntax - var name type = value;
 // OR
-// Null Syntax - type name = null;
-uint8 unsigned_integer_8bit = 1;
+// Null Syntax - var name type = null;
+var unsigned_integer_8bit uint8 = 1;
 
 // String Initialization
-// Syntax - type name = value;
+// Syntax - var name type = value;
 // OR
-// Null Syntax - type name = null;
+// Null Syntax - var name type = null;
 // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-str string_type = "string";
+var string_type str = "string";
 
 // Array Initialization
-// Syntax - [length]type name = [values];
+// Syntax - var name [length]type = [values];
 // OR
-// Multi-Dimensional Syntax - [rows][columns]type name = [values];
+// Multi-Dimensional Syntax - var name [rows][columns]type = [values];
 // OR
-// Unknown Size Syntax - []type name = [values];
+// Unknown Size Syntax - var name []type = [values];
 // OR
-// Null Syntax - [length]type name = [null];
+// Null Syntax - var name [length]type = [null];
 // Array Index Syntax - name[index]
-[5]uint8 array_type = [
+var array_type [5]uint8 = [
 	1,
 	2,
 	3,
@@ -130,11 +130,11 @@ str string_type = "string";
 ];
 
 // List Initialization
-// Syntax - type<type> name = [values];
+// Syntax - var name type<type> = [values];
 // OR
-// Null Syntax - type<type> name = [null];
+// Null Syntax - var name type<type> = [null];
 // List Index Syntax - name[index]
-list<uint8> list_type = [
+var list_type list<uint8> = [
 	1,
 	2,
 	3,
@@ -143,11 +143,11 @@ list<uint8> list_type = [
 ];
 
 // Hash Map Initialization
-// Syntax - type<type, type> name = [(key:value)];
+// Syntax - var name type<type, type> = [(key:value)];
 // OR
-// Null Syntax - type<type, type> name = [(null:null)];
+// Null Syntax - var name type<type, type> = [(null:null)];
 // Hash Map Index Syntax - name[key]
-map<uint8, str> map_type = [
+var map_type map<uint8, str> = [
 	(1:"string"),
 	(2:"string"),
 	(3:"string"),
@@ -155,17 +155,13 @@ map<uint8, str> map_type = [
 	(5:"string")
 ];
 
-// Generic Type Keyword - type
-// Pointer Operator - *
-// Reference Pointer Operator - &
-
 // Function Declaration
-// Syntax - type name(type parameter) {scope};
-str conditional_function(int8 first_parameter, int8 second_parameter) {
+// Syntax - func name(parameter type) type {scope};
+func conditional_function(first_parameter int8, second_parameter int8) str {
 	// Variable Declaration
-	str result;
+	var result str;
 	// Variable Initialization
-	int8 number = first_parameter - second_parameter;
+	var number int8 = first_parameter - second_parameter;
 
 	// If Conditional Statement
 	// Syntax - statement (condition) {scope} branch {scope};
@@ -180,18 +176,19 @@ str conditional_function(int8 first_parameter, int8 second_parameter) {
 };
 
 // Function Declaration
-// Syntax - type name(type parameter) {scope};
-uint8 loop_function(int8 first_parameter, int8 second_parameter) {
+// Syntax - func name(parameter type) type {scope};
+func loop_function(first_parameter int8 , second_parameter int8) uint8 {
 	// Variable Declaration
-	usize index;
-	[3]uint8 array_type = [
+	var index usize;
+	
+	// Variable Initialization
+	var array_type [3]uint8 = [
 		0,
 		1,
 		2
 	];
-	// Variable Initialization
+	var number int8 = first_parameter - second_parameter;
 	index = 0;
-	int8 number = first_parameter - second_parameter;
 
 	// While Loop Statement
 	// Syntax - statement (condition) {scope};
