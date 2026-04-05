@@ -12,6 +12,7 @@
 ## Language Syntax
 
 ```shell
+// Constant Keyword - const
 // Data Structure Keyword - struct
 // For Loop Keyword - for
 // Function Keyword - func
@@ -85,6 +86,7 @@ var string_type = "string";
 // Syntax - var name = [values];
 // OR
 // Null Syntax - var name = [null];
+// Array Index Syntax - name[index]
 var array_type = [
 	1,
 	2,
@@ -97,6 +99,7 @@ var array_type = [
 // Syntax - var name = [(key:value)];
 // OR
 // Null Syntax - var name = [(null:null)];
+// Map Index Syntax - name[key]
 var map_type = [
 	(1:"string"),
 	(2:"string"),

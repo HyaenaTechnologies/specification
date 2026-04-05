@@ -13,24 +13,9 @@
 
 // This is a Comment
 
-// Data Structure Declaration
-// May be Declared with Initialized Fields
-// Syntax - Name {fields};
-DataStructure {
-	byte_type; // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
-	integer_type;
-	float_type;
-	boolean_type;
-	character_type; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-	string_type; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-	array_type;
-	map_type;
-	structure_type;
-};
-
 // Data Structure Initialization
-// Syntax - name = type {fields};
-structure_type = DataStructure {
+// Syntax - type {fields};
+DataStructure {
 	byte_type = null; // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
 	integer_type = 1;
 	float_type = 1.0;

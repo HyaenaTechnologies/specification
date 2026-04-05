@@ -12,6 +12,7 @@
 ## Language Syntax
 
 ```shell
+// Constant Keyword - const
 // Data Structure Keyword - struct
 // For Loop Keyword - for
 // Function Keyword - func
