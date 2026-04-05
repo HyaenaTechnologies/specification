@@ -46,9 +46,8 @@ struct DataStructure {
 	boolean_type bool = true;
 	character_type char = 'a'; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
 	string_type str = "string"; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-	array_type [5]uint8 = [];
-	list_type list<uint8> = [];
-	map_type map<uint8, str> = [()];
+	array_type [5]uint8 = [5]uint8 [];
+	map_type map<uint8, str> = map<uint8, str> {()};
 	structure_type DataStructure = DataStructure {};
 };
 
@@ -101,12 +100,16 @@ var array_type [5]uint8 = [
 	5
 ];
 
-// List Initialization
-// Syntax - var name type<type> = [values];
+// Array Initialization
+// Syntax - var name [length]type = [values];
 // OR
-// Null Syntax - var name type<type> = [null];
-// List Index Syntax - name[index]
-var list_type list<uint8> = [
+// Multi-Dimensional Syntax - var name [rows][columns]type = [rows][columns]type [values];
+// OR
+// Unknown Size Syntax - var name []type = []type [values];
+// OR
+// Null Syntax - var name [length]type = [length]type [null];
+// Array Index Syntax - name[index]
+var array_type [5]uint8 = [5]uint8 [
 	1,
 	2,
 	3,
@@ -115,24 +118,22 @@ var list_type list<uint8> = [
 ];
 
 // Hash Map Initialization
-// Syntax - var name type<type, type> = [(key:value)];
+// Syntax - var name type<type, type> = type<type, type> {(key:value)};
 // OR
-// Null Syntax - var name type<type, type> = [(null:null)];
+// Null Syntax - var name type<type, type> = type<type, type> {(null:null)};
 // Hash Map Index Syntax - name[key]
-var map_type map<uint8, str> = [
+var map_type map<uint8, str> = map<uint8, str> {
 	(1:"string"),
 	(2:"string"),
 	(3:"string"),
 	(4:"string"),
 	(5:"string")
-];
+};
 
 // Function Declaration
 // Syntax - func name(parameter type) type {scope};
 func conditional_function(first_parameter int8, second_parameter int8) str {
-	// Variable Declaration
 	var result str;
-	// Variable Initialization
 	var number int8 = first_parameter - second_parameter;
 
 	// If Conditional Statement
@@ -150,18 +151,14 @@ func conditional_function(first_parameter int8, second_parameter int8) str {
 // Function Declaration
 // Syntax - func name(parameter type) type {scope};
 func loop_function(first_parameter int8, second_parameter int8) uint8 {
-	// Variable Declaration
-	var index usize;
-	
-	// Variable Initialization
+	var index usize = 0;
 	var array_type [3]uint8 = [
 		0,
 		1,
 		2
 	];
 	var number int8 = first_parameter - second_parameter;
-	index = 0;
-
+	
 	// While Loop Statement
 	// Syntax - statement (condition) {scope};
 	while (number < 1) {

@@ -31,7 +31,7 @@ struct DataStructure {
 	character_type = 'a'; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
 	string_type = "string"; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
 	array_type = [];
-	map_type = [()];
+	map_type = {()};
 	structure_type = DataStructure {};
 };
 
@@ -81,24 +81,22 @@ var array_type = [
 ];
 
 // Hash Map Initialization
-// Syntax - var name = [(key:value)];
+// Syntax - var name = {(key:value)};
 // OR
-// Null Syntax - var name = [(null:null)];
+// Null Syntax - var name = {(null:null)};
 // Map Index Syntax - name[key]
-var map_type = [
+var map_type = {
 	(1:"string"),
 	(2:"string"),
 	(3:"string"),
 	(4:"string"),
 	(5:"string")
-];
+};
 
 // Function Declaration
 // Syntax - func name(parameter) {scope};
 func conditional_function(first_parameter, second_parameter) {
-	// Variable Declaration
 	var result;
-	// Variable Initialization
 	var number = first_parameter - second_parameter;
 
 	// If Conditional Statement
@@ -116,17 +114,13 @@ func conditional_function(first_parameter, second_parameter) {
 // Function Declaration
 // Syntax - func name(parameter) {scope};
 func loop_function(first_parameter, second_parameter) {
-	// Variable Declaration
-	var index;
-	
-	// Variable Initialization
+	var index = 0;
 	var array_type = [
 		0,
 		1,
 		2
 	];
 	var number = first_parameter - second_parameter;
-	index = 0;
 
 	// While Loop Statement
 	// Syntax - statement (condition) {scope};

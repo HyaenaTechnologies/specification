@@ -26,7 +26,7 @@ DataStructure {
 	character_type = 'a'; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
 	string_type = "string"; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
 	array_type = [];
-	map_type = [()];
+	map_type = {()};
 	structure_type = DataStructure {};
 };
 
@@ -75,16 +75,16 @@ array_type = [
 ];
 
 // Hash Map Initialization
-// Syntax - name = [(key:value)];
+// Syntax - name = {(key:value)};
 // OR
-// Null Syntax - name = [(null:null)];
-map_type = [
+// Null Syntax - name = {(null:null)};
+map_type = {
 	(1:"string"),
 	(2:"string"),
 	(3:"string"),
 	(4:"string"),
 	(5:"string")
-];
+};
 ```
 
 ## Statically Typed Syntax
@@ -116,9 +116,8 @@ struct DataStructure {
 	boolean_type bool = true;
 	character_type char = 'a'; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
 	string_type str = "string"; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-	array_type [5]uint8 = [];
-	list_type list<uint8> = [];
-	map_type map<uint8, str> = [()];
+	array_type [5]uint8 = [5]uint8 [];
+	map_type map<uint8, str> = map<uint8, str> {()};
 	structure_type DataStructure = DataStructure {};
 };
 
@@ -155,26 +154,14 @@ var unsigned_integer_8bit uint8 = 1;
 var string_type str = "string";
 
 // Array Initialization
-// Syntax - var name [length]type = [values];
+// Syntax - var name [length]type = [length]type [values];
 // OR
-// Multi-Dimensional Syntax - var name [rows][columns]type = [values];
+// Multi-Dimensional Syntax - var name [rows][columns]type = [rows][columns]type [values];
 // OR
-// Unknown Size Syntax - var name []type = [values];
+// Unknown Size Syntax - var name []type = []type [values];
 // OR
-// Null Syntax - var name [length]type = [null];
-var array_type [5]uint8 = [
-	1,
-	2,
-	3,
-	4,
-	5
-];
-
-// List Initialization
-// Syntax - var name type<type> = [values];
-// OR
-// Null Syntax - var name type<type> = [null];
-var list_type list<uint8> = [
+// Null Syntax - var name [length]type = [length]type [null];
+var array_type [5]uint8 = [5]uint8 [
 	1,
 	2,
 	3,
@@ -183,15 +170,15 @@ var list_type list<uint8> = [
 ];
 
 // Hash Map Initialization
-// Syntax - var name type<type, type> = [(key:value)];
+// Syntax - var name type<type, type> = type<type, type> {(key:value)};
 // OR
-// Null Syntax - var name type<type, type> = [(null:null)];
-var map_type map<uint8, str> = [
+// Null Syntax - var name type<type, type> = type<type, type> {(null:null)};
+var map_type map<uint8, str> = map<uint8, str> {
 	(1:"string"),
 	(2:"string"),
 	(3:"string"),
 	(4:"string"),
 	(5:"string")
-];
+};
 ```
 
