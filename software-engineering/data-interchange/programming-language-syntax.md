@@ -26,8 +26,8 @@
 
 // Data Structure Declaration
 // May be Declared with Initialized Fields
-// Syntax - type Name struct {fields};
-type DataStructure struct {
+// Syntax - struct Name {fields};
+struct DataStructure {
 	byte_type byte; // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
 	unsigned_integer_size usize; // Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISC32, RISC64
 	unsigned_integer_8bit uint8;
