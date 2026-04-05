@@ -28,9 +28,12 @@ struct DataStructure {
 	character_type = 'a'; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
 	string_type = "string"; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
 	array_type = {};
-	map_type = {()};
+	map_type = {};
 	structure_type = DataStructure {};
 };
+
+// Variable Declaration
+// Syntax - var name;
 
 // Boolean Initialization
 // Syntax - var name = value;

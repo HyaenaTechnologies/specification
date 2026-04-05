@@ -16,9 +16,12 @@
 ## Dynamically Typed Syntax
 
 ```shell
+// Data Structure Keyword - struct
+// Variable Keyword - var
+
 // Data Structure Initialization
-// Syntax - type {fields};
-DataStructure {
+// Syntax - struct name {fields};
+struct DataStructure {
 	byte_type = null; // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
 	integer_type = 1;
 	float_type = 1.0;
@@ -26,47 +29,48 @@ DataStructure {
 	character_type = 'a'; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
 	string_type = "string"; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
 	array_type = {};
-	map_type = {()};
+	map_type = {};
 	structure_type = DataStructure {};
 };
 
 // Boolean Initialization
-// Syntax - name = value;
+// Syntax - var name = value;
 // OR
-// Null Syntax - name = null;
-boolean_type = true;
+// Null Syntax - var name = null;
+var boolean_type = true;
 
 // Character Initialization
-// Syntax - name = value;
+// Syntax - var name = value;
 // OR
-// Null Syntax - name = null;
+// Null Syntax - var name = null;
 // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-character_type = 'a';
+var character_type = 'a';
 
 // Float Initialization
-// Syntax - name = value;
+// Syntax - var name = value;
 // OR
-// Null Syntax - name = null;
-float_type = 1.0;
+// Null Syntax - var name = null;
+var float_type = 1.0;
 
 // Integer Initialization
-// Syntax - name = value;
+// Syntax - var name = value;
 // OR
-// Null Syntax - name = null;
-integer_type = 1;
+// Null Syntax - var name = null;
+var integer_type = 1;
 
 // String Initialization
-// Syntax - name = value;
+// Syntax - var name = value;
 // OR
-// Null Syntax - name = null;
+// Null Syntax - var name = null;
 // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-string_type = "string";
+var string_type = "string";
 
 // Array Initialization
-// Syntax - name = {values};
+// Syntax - var name = {values};
 // OR
-// Null Syntax - name = {null};
-array_type = {
+// Null Syntax - var name = {null};
+// Array Index Syntax - name[index]
+var array_type = {
 	1,
 	2,
 	3,
@@ -75,10 +79,11 @@ array_type = {
 };
 
 // Hash Map Initialization
-// Syntax - name = {(key:value)};
+// Syntax - var name = {(key:value)};
 // OR
-// Null Syntax - name = {(null:null)};
-map_type = {
+// Null Syntax - var name = {(null:null)};
+// Map Index Syntax - name[key]
+var map_type = {
 	(1:"string"),
 	(2:"string"),
 	(3:"string"),
@@ -117,9 +122,12 @@ struct DataStructure {
 	character_type char = 'a'; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
 	string_type str = "string"; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
 	array_type [5]uint8 = {};
-	map_type map<uint8, str> = {()};
+	map_type map<uint8, str> = {};
 	structure_type DataStructure = {};
 };
+
+// Variable Declaration
+// Syntax - var name type;
 
 // Boolean Initialization
 // Syntax - var name type = value;
