@@ -21,24 +21,9 @@
 // Variable Keyword - var
 // While Loop Keyword - while
 
-// Data Structure Declaration
-// May be Declared with Initialized Fields
-// Syntax - struct Name {fields};
-struct DataStructure {
-	byte_type; // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
-	integer_type;
-	float_type;
-	boolean_type;
-	character_type; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-	string_type; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-	array_type;
-	map_type;
-	structure_type;
-};
-
 // Data Structure Initialization
-// Syntax - var name = type {fields};
-var structure_type = DataStructure {
+// Syntax - struct name {fields};
+struct DataStructure {
 	byte_type = null; // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
 	integer_type = 1;
 	float_type = 1.0;

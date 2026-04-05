@@ -24,38 +24,9 @@
 // Variable Keyword - var
 // While Loop Keyword - while
 
-// Data Structure Declaration
-// May be Declared with Initialized Fields
-// Syntax - struct Name {fields};
-struct DataStructure {
-	byte_type byte; // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
-	unsigned_integer_size usize; // Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISC32, RISC64
-	unsigned_integer_8bit uint8;
-	unsigned_integer_16bit uint16;
-	unsigned_integer_32bit uint32;
-	unsigned_integer_64bit uint64;
-	unsigned_integer_128bit uint128;
-	signed_integer_size isize; // Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISC32, RISC64
-	signed_integer_8bit int8;
-	signed_integer_16bit int16;
-	signed_integer_32bit int32;
-	signed_integer_64bit int64;
-	signed_integer_128bit int128;
-	float_32bit float32;
-	float_64bit float64;
-	float_128bit float128;
-	boolean_type bool;
-	character_type char; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-	string_type str; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-	array_type [5]uint8;
-	list_type list<uint8>;
-	map_type map<uint8, str>;
-	structure_type DataStructure;
-};
-
 // Data Structure Initialization
-// Syntax - var name type = type {fields};
-var structure_type DataStructure = DataStructure {
+// Syntax - struct name {fields};
+struct DataStructure {
 	byte_type byte = null; // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
 	unsigned_integer_size usize = 0; // Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISC32, RISC64
 	unsigned_integer_8bit uint8 = 1;
