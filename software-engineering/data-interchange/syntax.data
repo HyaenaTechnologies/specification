@@ -16,15 +16,43 @@
 // Data Structure Keyword - struct
 // Variable Keyword - var
 
-// Data Structure Initialization
+// Data Structure Declaration
 // Syntax - struct name {fields};
 struct DataStructure {
-	byte_type = null; // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
+	byte_type; // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
+	integer_type;
+	float_type;
+	boolean_type;
+	character_type; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
+	string_type; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
+	array_type;
+	map_type;
+	structure_type;
+};
+
+// Data Structure Initialization
+// Syntax - var name = type {fields};
+var structure_type = DataStructure {
+	null,
+	1,
+	1.0,
+	true,
+	'a',
+	"string",
+	{},
+	{},
+	DataStructure {}
+};
+
+// Data Structure Initialized Declaration
+// Syntax - struct name {fields};
+struct DataStructure {
+	byte_type = null;
 	integer_type = 1;
 	float_type = 1.0;
 	boolean_type = true;
-	character_type = 'a'; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-	string_type = "string"; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
+	character_type = 'a';
+	string_type = "string";
 	array_type = {};
 	map_type = {};
 	structure_type = DataStructure {};
@@ -66,7 +94,6 @@ var string_type = "string";
 // Syntax - var name = {values};
 // OR
 // Null Syntax - var name = {null};
-// Array Index Syntax - name[index]
 var array_type = {
 	1,
 	2,
@@ -79,7 +106,6 @@ var array_type = {
 // Syntax - var name = {(key:value)};
 // OR
 // Null Syntax - var name = {(null:null)};
-// Map Index Syntax - name[key]
 var map_type = {
 	(1:"string"),
 	(2:"string"),
