@@ -126,9 +126,6 @@ struct DataStructure {
 	structure_type DataStructure = {};
 };
 
-// Variable Declaration
-// Syntax - var name type;
-
 // Boolean Initialization
 // Syntax - var name type = value;
 // OR

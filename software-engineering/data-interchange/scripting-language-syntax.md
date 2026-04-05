@@ -35,9 +35,6 @@ struct DataStructure {
 	structure_type = DataStructure {};
 };
 
-// Variable Declaration
-// Syntax - var name;
-
 // Boolean Initialization
 // Syntax - var name = value;
 // OR
