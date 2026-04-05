@@ -27,7 +27,7 @@ struct DataStructure {
 	boolean_type = true;
 	character_type = 'a'; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
 	string_type = "string"; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-	array_type = [];
+	array_type = {};
 	map_type = {()};
 	structure_type = DataStructure {};
 };
@@ -65,17 +65,17 @@ var integer_type = 1;
 var string_type = "string";
 
 // Array Initialization
-// Syntax - var name = [values];
+// Syntax - var name = {values};
 // OR
-// Null Syntax - var name = [null];
+// Null Syntax - var name = {null};
 // Array Index Syntax - name[index]
-var array_type = [
+var array_type = {
 	1,
 	2,
 	3,
 	4,
 	5
-];
+};
 
 // Hash Map Initialization
 // Syntax - var name = {(key:value)};

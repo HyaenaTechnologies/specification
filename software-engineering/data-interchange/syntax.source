@@ -43,9 +43,9 @@ struct DataStructure {
 	boolean_type bool = true;
 	character_type char = 'a'; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
 	string_type str = "string"; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-	array_type [5]uint8 = [5]uint8 [];
-	map_type map<uint8, str> = map<uint8, str> {()};
-	structure_type DataStructure = DataStructure {};
+	array_type [5]uint8 = {};
+	map_type map<uint8, str> = {()};
+	structure_type DataStructure = {};
 };
 
 // Boolean Initialization
@@ -98,28 +98,28 @@ var array_type [5]uint8 = [
 ];
 
 // Array Initialization
-// Syntax - var name [length]type = [values];
+// Syntax - var name [length]type = {values};
 // OR
-// Multi-Dimensional Syntax - var name [rows][columns]type = [rows][columns]type [values];
+// Multi-Dimensional Syntax - var name [rows][columns]type = {values};
 // OR
-// Unknown Size Syntax - var name []type = []type [values];
+// Unknown Size Syntax - var name []type = {values};
 // OR
-// Null Syntax - var name [length]type = [length]type [null];
+// Null Syntax - var name [length]type = {null};
 // Array Index Syntax - name[index]
-var array_type [5]uint8 = [5]uint8 [
+var array_type [5]uint8 = {
 	1,
 	2,
 	3,
 	4,
 	5
-];
+};
 
 // Hash Map Initialization
-// Syntax - var name type<type, type> = type<type, type> {(key:value)};
+// Syntax - var name type<type, type> = {(key:value)};
 // OR
-// Null Syntax - var name type<type, type> = type<type, type> {(null:null)};
+// Null Syntax - var name type<type, type> = {(null:null)};
 // Hash Map Index Syntax - name[key]
-var map_type map<uint8, str> = map<uint8, str> {
+var map_type map<uint8, str> = {
 	(1:"string"),
 	(2:"string"),
 	(3:"string"),

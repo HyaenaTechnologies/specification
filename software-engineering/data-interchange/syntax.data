@@ -22,7 +22,7 @@ DataStructure {
 	boolean_type = true;
 	character_type = 'a'; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
 	string_type = "string"; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-	array_type = [];
+	array_type = {};
 	map_type = {()};
 	structure_type = DataStructure {};
 };
@@ -60,16 +60,16 @@ integer_type = 1;
 string_type = "string";
 
 // Array Initialization
-// Syntax - name = [values];
+// Syntax - name = {values};
 // OR
-// Null Syntax - name = [null];
-array_type = [
+// Null Syntax - name = {null};
+array_type = {
 	1,
 	2,
 	3,
 	4,
 	5
-];
+};
 
 // Hash Map Initialization
 // Syntax - name = {(key:value)};
