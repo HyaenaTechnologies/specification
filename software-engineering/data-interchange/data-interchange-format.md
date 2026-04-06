@@ -19,34 +19,6 @@
 // Data Structure Keyword - struct
 // Variable Keyword - var
 
-// Data Structure Declaration
-// Syntax - struct name {fields};
-struct DataStructure {
-	byte_type; // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
-	integer_type;
-	float_type;
-	boolean_type;
-	character_type; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-	string_type; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-	array_type;
-	map_type;
-	structure_type;
-};
-
-// Data Structure Initialization
-// Syntax - var name = type {fields};
-var structure_type = DataStructure {
-	null,
-	1,
-	1.0,
-	true,
-	'a',
-	"string",
-	{},
-	{},
-	DataStructure {}
-};
-
 // Data Structure Initialized Declaration
 // Syntax - struct name {fields};
 struct DataStructure {
@@ -155,28 +127,28 @@ struct DataStructure {
 // Data Structure Initialization
 // Syntax - var name type = {fields};
 var structure_type DataStructure = {
-	null,
-	0,
-	1,
-	2,
-	3,
-	4,
-	5,
-	null,
-	-1,
-	-2,
-	-3,
-	-4,
-	-5,
-	null,
-	2.0,
-	3.0,
-	true,
-	'a',
-	"string",
-	{},
-	{},
-	{}
+	byte_type: null,
+	unsigned_integer_size: 0,
+	unsigned_integer_8bit: 1,
+	unsigned_integer_16bit: 2,
+	unsigned_integer_32bit: 3,
+	unsigned_integer_64bit: 4,
+	unsigned_integer_128bit: 5,
+	signed_integer_size: null,
+	signed_integer_8bit: -1,
+	signed_integer_16bit: -2,
+	signed_integer_32bit: -3,
+	signed_integer_64bit: -4,
+	signed_integer_128bit: -5,
+	float_32bit: null,
+	float_64bit: 2.0,
+	float_128bit: 3.0,
+	boolean_type: true,
+	character_type: 'a',
+	string_type: "string",
+	array_type: {},
+	map_type: {},
+	structure_type: {}
 };
 
 // Data Structure Initialized Declaration
