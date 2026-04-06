@@ -13,12 +13,9 @@
 
 // This is a Comment
 
-// Data Structure Keyword - struct
-// Variable Keyword - var
-
 // Data Structure Initialized Declaration
-// Syntax - struct name {fields};
-struct DataStructure {
+// Syntax - name {fields};
+DataStructure {
 	byte_type = null;
 	integer_type = 1;
 	float_type = 1.0;
@@ -31,49 +28,49 @@ struct DataStructure {
 };
 
 // Boolean Initialization
-// Syntax - var name = value;
+// Syntax - name = value;
 // OR
-// Null Syntax - var name = null;
-var boolean_type = true;
+// Null Syntax - name = null;
+boolean_type = true;
 
 // Byte Initialization
-// Syntax - var name = value;
+// Syntax - name = value;
 // OR
-// Null Syntax - var name = null;
+// Null Syntax - name = null;
 // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
-var byte_type = 'a';
+byte_type = 'a';
 
 // Character Initialization
-// Syntax - var name = value;
+// Syntax - name = value;
 // OR
-// Null Syntax - var name = null;
+// Null Syntax - name = null;
 // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-var character_type = 'a';
+character_type = 'a';
 
 // Float Initialization
-// Syntax - var name = value;
+// Syntax - name = value;
 // OR
-// Null Syntax - var name = null;
-var float_type = 1.0;
+// Null Syntax - name = null;
+float_type = 1.0;
 
 // Integer Initialization
-// Syntax - var name = value;
+// Syntax - name = value;
 // OR
-// Null Syntax - var name = null;
-var integer_type = 1;
+// Null Syntax - name = null;
+integer_type = 1;
 
 // String Initialization
-// Syntax - var name = value;
+// Syntax - name = value;
 // OR
-// Null Syntax - var name = null;
+// Null Syntax - name = null;
 // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-var string_type = "string";
+string_type = "string";
 
 // Array Initialization
-// Syntax - var name = {values};
+// Syntax - name = {values};
 // OR
-// Null Syntax - var name = {null};
-var array_type = {
+// Null Syntax - name = {null};
+array_type = {
 	1,
 	2,
 	3,
@@ -82,10 +79,10 @@ var array_type = {
 };
 
 // Hash Map Initialization
-// Syntax - var name = {(key:value)};
+// Syntax - name = {(key:value)};
 // OR
-// Null Syntax - var name = {(null:null)};
-var map_type = {
+// Null Syntax - name = {(null:null)};
+map_type = {
 	(1:"string"),
 	(2:"string"),
 	(3:"string"),
