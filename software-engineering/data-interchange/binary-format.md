@@ -13,6 +13,8 @@
 - Octal: Base 8
 - Decimal: Base 10
 - Hexadecimal: Base 16
+- Duotrigesimal: Base 32
+- Quadrahexagesimal: Base 64
 
 ## Binary Format Prefixes
 
@@ -21,6 +23,8 @@
 - Octal Prefixes: 0o, \o, #o, %o
 - Decimal Prefixes: 0d, \d, #d, %d
 - Hexadecimal Prefixes: 0x, \x, #x, %x
+- Duotrigesimal Prefixes: 0dt, \dt, #dt, %dt
+- Quadrahexagesimal Prefixes: 0qx, \qx, #qx, %qx  
 
 ## Binary Format Syntax
 
