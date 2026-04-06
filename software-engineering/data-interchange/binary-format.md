@@ -8,23 +8,34 @@
 
 ## Numeral Systems
 
+- Unary: Base 1
 - Binary: Base 2
+- Trinary: Base 3
 - Quaternary: Base 4
+- Quinary: Base 5
+- Heximal: Base 6
+- Septenary: Base 7
 - Octal: Base 8
+- Nonal: Base 9
 - Decimal: Base 10
 - Hexadecimal: Base 16
 - Duotrigesimal: Base 32
 - Quadrahexagesimal: Base 64
 
-## Binary Format Prefixes
+## Numeral Format Prefixes
 
 - Binary Prefixes: \, #, %
-- Quaternary Prefixes: 0q, \q, #q, %q
+- Trinary Prefixes: 0t, \t, #t, %t
+- Quaternary Prefixes: 0qt, \qt, #qt, %qt
+- Quinary Prefixes: 0q, \q, #q, %q
+- Heximal Prefixes: 0s, \s, #s, %s
+- Septenary Prefixes: 0st, \st, #st, %st
 - Octal Prefixes: 0o, \o, #o, %o
+- Nonal Prefixes: 0nn, \nn, #nn, %nn
 - Decimal Prefixes: 0d, \d, #d, %d
 - Hexadecimal Prefixes: 0x, \x, #x, %x
 - Duotrigesimal Prefixes: 0dt, \dt, #dt, %dt
-- Quadrahexagesimal Prefixes: 0qx, \qx, #qx, %qx  
+- Quadrahexagesimal Prefixes: 0qx, \qx, #qx, %qx
 
 ## Binary Format Syntax
 
