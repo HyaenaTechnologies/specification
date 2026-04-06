@@ -14,7 +14,7 @@
 // This is a Comment
 
 // Data Structure Initialized Declaration
-// Syntax - name {fields};
+// Syntax - Name {fields};
 DataStructure {
 	byte_type = null;
 	integer_type = 1;
