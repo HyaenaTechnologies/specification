@@ -130,7 +130,7 @@ var float_32bit: float32 = 1.0;
 // Null Syntax - var name: type = null;
 var unsigned_integer_8bit: uint8 = 1;
 
-// Platform Dependant Integer Size Initialization
+// Platform Dependent Integer Size Initialization
 // Syntax - var name: type = value;
 // OR
 // Null Syntax - var name: type = null;
