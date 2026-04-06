@@ -104,28 +104,28 @@ map_type = {
 // Data Structure Declaration
 // Syntax - struct Name {fields};
 struct DataStructure {
-	byte_type: byte;
-	unsigned_integer_size: usize;
-	unsigned_integer_8bit: uint8;
-	unsigned_integer_16bit: uint16;
-	unsigned_integer_32bit: uint32;
-	unsigned_integer_64bit: uint64;
-	unsigned_integer_128bit: uint128;
-	signed_integer_size: isize;
-	signed_integer_8bit: int8;
-	signed_integer_16bit: int16;
-	signed_integer_32bit: int32;
-	signed_integer_64bit: int64;
-	signed_integer_128bit: int128;
-	float_32bit: float32;
-	float_64bit: float64;
-	float_128bit: float128;
-	boolean_type: bool;
-	character_type: char;
-	string_type: str;
-	array_type: [5]uint8;
-	map_type: map<uint8, str>;
-	structure_type: DataStructure;
+	byte_type: byte,
+	unsigned_integer_size: usize,
+	unsigned_integer_8bit: uint8,
+	unsigned_integer_16bit: uint16,
+	unsigned_integer_32bit: uint32,
+	unsigned_integer_64bit: uint64,
+	unsigned_integer_128bit: uint128,
+	signed_integer_size: isize,
+	signed_integer_8bit: int8,
+	signed_integer_16bit: int16,
+	signed_integer_32bit: int32,
+	signed_integer_64bit: int64,
+	signed_integer_128bit: int128,
+	float_32bit: float32,
+	float_64bit: float64,
+	float_128bit: float128,
+	boolean_type: bool,
+	character_type: char,
+	string_type: str,
+	array_type: [5]uint8,
+	map_type: map<uint8, str>,
+	structure_type: DataStructure
 };
 
 // Data Structure Initialization
