@@ -37,6 +37,20 @@
 - Duotrigesimal Prefixes: 0dt, \dt, #dt, %dt
 - Quadrahexagesimal Prefixes: 0qx, \qx, #qx, %qx
 
+## ASCII Characters
+
+| symbol | Binary | Octal | Decimal | Hexadecimal |
+| ------ | ------ | ----- | ------- | ----------- |
+|        |        |       |         |             |
+ 
+
+## Delimiters, Keywords and Primitive Types
+
+| symbol | Binary | Octal | Decimal | Hexadecimal |
+| ------ | ------ | ----- | ------- | ----------- |
+|        |        |       |         |             |
+
+
 ## Binary Format Syntax
 
 ```shell
