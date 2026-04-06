@@ -39,6 +39,13 @@ struct DataStructure {
 // Null Syntax - var name = null;
 var boolean_type = true;
 
+// Byte Initialization
+// Syntax - var name = value;
+// OR
+// Null Syntax - var name = null;
+// Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
+var byte_type = 'a';
+
 // Character Initialization
 // Syntax - var name = value;
 // OR
@@ -100,14 +107,14 @@ var map_type = {
 // Data Structure Declaration
 // Syntax - struct Name {fields};
 struct DataStructure {
-	byte_type byte; // Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
-	unsigned_integer_size usize; // Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISC32, RISC64
+	byte_type byte;
+	unsigned_integer_size usize;
 	unsigned_integer_8bit uint8;
 	unsigned_integer_16bit uint16;
 	unsigned_integer_32bit uint32;
 	unsigned_integer_64bit uint64;
 	unsigned_integer_128bit uint128;
-	signed_integer_size isize; // Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISC32, RISC64
+	signed_integer_size isize;
 	signed_integer_8bit int8;
 	signed_integer_16bit int16;
 	signed_integer_32bit int32;
@@ -117,8 +124,8 @@ struct DataStructure {
 	float_64bit float64;
 	float_128bit float128;
 	boolean_type bool;
-	character_type char; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
-	string_type str; // Encoding Dependent: ASCII, UTF-8, UTF-16, UTF-32
+	character_type char;
+	string_type str;
 	array_type [5]uint8;
 	map_type map<uint8, str>;
 	structure_type DataStructure;
@@ -184,6 +191,13 @@ struct DataStructure {
 // Null Syntax - var name type = null;
 var boolean_type bool = true;
 
+// Byte Initialization
+// Syntax - var name type = value;
+// OR
+// Null Syntax - var name type = null;
+// Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
+var byte_type byte = 'a';
+
 // Character Initialization
 // Syntax - var name type = value;
 // OR
@@ -202,6 +216,13 @@ var float_32bit float32 = 1.0;
 // OR
 // Null Syntax - var name type = null;
 var unsigned_integer_8bit uint8 = 1;
+
+// Platform Dependant Integer Size Initialization
+// Syntax - var name type = value;
+// OR
+// Null Syntax - var name type = null;
+// Platform Dependent: x86, x86_64, AARCH32, AARCH64, RISC32, RISC64
+var unsigned_integer_size usize = 1;
 
 // String Initialization
 // Syntax - var name type = value;

@@ -41,6 +41,13 @@ struct DataStructure {
 // Null Syntax - var name = null;
 var boolean_type = true;
 
+// Byte Initialization
+// Syntax - var name = value;
+// OR
+// Null Syntax - var name = null;
+// Encoding Dependent: ASCII, Binary, UTF-8, UTF-16, UTF-32
+var byte_type = 'a';
+
 // Character Initialization
 // Syntax - var name = value;
 // OR
