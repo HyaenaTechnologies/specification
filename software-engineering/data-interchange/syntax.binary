@@ -21,19 +21,7 @@
 // Hexadecimal: Base 16
 // Duotrigesimal: Base 32
 // Quadrahexagesimal: Base 64
-
-// Numeral Format Prefixes
-//
-// Binary Prefixes: #, %
-// Trinary Prefixes: 0t, \t, #t, %t
-// Quaternary Prefixes: 0qt, \qt, #qt, %qt
-// Quinary Prefixes: 0q, \q, #q, %q
-// Heximal Prefixes: 0s, \s, #s, %s
-// Septenary Prefixes: 0st, \st, #st, %st
+// Numeral Prefix Syntax: 0prefix, \prefix, #prefix, %prefix
 // Octal Prefixes: 0o, \o, #o, %o
-// Nonal Prefixes: 0nn, \nn, #nn, %nn
-// Decimal Prefixes: 0d, \d, #d, %d
 // Hexadecimal Prefixes: 0x, \x, #x, %x
-// Duotrigesimal Prefixes: 0dt, \dt, #dt, %dt
-// Quadrahexagesimal Prefixes: 0qx, \qx, #qx, %qx
 
