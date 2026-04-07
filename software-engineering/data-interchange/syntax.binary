@@ -24,7 +24,7 @@
 
 // Numeral Format Prefixes
 //
-// Binary Prefixes: \, #, %
+// Binary Prefixes: #, %
 // Trinary Prefixes: 0t, \t, #t, %t
 // Quaternary Prefixes: 0qt, \qt, #qt, %qt
 // Quinary Prefixes: 0q, \q, #q, %q
