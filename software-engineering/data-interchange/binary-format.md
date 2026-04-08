@@ -161,7 +161,7 @@
 | 0111 1001 | 171   | 121     | 79          | y     | 1 Byte |
 | 0111 1010 | 172   | 122     | 7A          | z     | 1 Byte |
 | 0111 1011 | 173   | 123     | 7B          | {     | 1 Byte |
-| 0111 1100 | 174   | 124     | 7C          | |     | 1 Byte |
+| 0111 1100 | 174   | 124     | 7C          | \|    | 1 Byte |
 | 0111 1101 | 175   | 125     | 7D          | }     | 1 Byte |
 | 0111 1110 | 176   | 126     | 7E          | ~     | 1 Byte |
 
@@ -171,26 +171,26 @@
 
 | symbol   | size    | Binary | Octal | Decimal | Hexadecimal |
 | -------- | ------- | ------ | ----- | ------- | ----------- |
-| bool     | 4 Bytes |
-| byte     | 4 Bytes |
-| char     | 4 Bytes |
-| float32  | 7 Bytes |
-| float64  | 7 Bytes |
-| float128 | 8 Bytes |
-| isize    | 5 Bytes |
-| int8     | 4 Bytes |
-| int16    | 5 Bytes |
-| int32    | 5 Bytes |
-| int64    | 5 Bytes |
-| int128   | 6 Bytes |
-| map      | 3 Bytes |
-| str      | 3 Bytes |
-| usize    | 5 Bytes |
-| uint8    | 5 Bytes |
-| uint16   | 6 Bytes |
-| uint32   | 6 Bytes |
-| uint64   | 6 Bytes |
-| uint128  | 7 Bytes |
+| bool     | 4 Bytes |                  428
+| byte     | 4 Bytes |                  436
+| char     | 4 Bytes |                  414
+| float32  | 7 Bytes |                  635
+| float64  | 7 Bytes |                  640
+| float128 | 8 Bytes |                  689
+| isize    | 5 Bytes |                  548
+| int8     | 4 Bytes |                  387
+| int16    | 5 Bytes |                  434
+| int32    | 5 Bytes |                  432
+| int64    | 5 Bytes |                  427
+| int128   | 6 Bytes |                  486
+| map      | 3 Bytes |                  318
+| str      | 3 Bytes |                  345
+| usize    | 5 Bytes |                  560
+| uint8    | 5 Bytes |                  504
+| uint16   | 6 Bytes |                  551
+| uint32   | 6 Bytes |                  549
+| uint64   | 6 Bytes |                  544
+| uint128  | 7 Bytes |                  603
 
 ### Keywords
 
