@@ -27,44 +27,6 @@
 
 ## ASCII Characters
 
-### Control Codes: 1967
-
-| Binary    | Octal | Decimal | Hexadecimal | Abbreviation | Unicode | Caret | C Escape | Name                           | Size   |
-| --------- | ----- | ------- | ----------- | ------------ | ------- | ----- | -------- | ------------------------------ | ------ |
-| 0000 0000 | 000   | 0       | 00          | NUL          | ␀       | ^@    | \0       | Null                           | 1 Byte |
-| 0000 0001 | 001   | 1       | 01          | SOH          | ␁       | ^A    |		    | Start of Heading               | 1 Byte |
-| 0000 0010 | 002   | 2       | 02          | STX          | ␂       | ^B    |		    | Start of Text                  | 1 Byte |
-| 0000 0011 | 003   | 3       | 03          | ETX          | ␃       | ^C    |		    | End of Text                    | 1 Byte |
-| 0000 0100 | 004   | 4       | 04          | EOT          | ␄       | ^D    |		    | End of Transmission            | 1 Byte |
-| 0000 0101 | 005   | 5       | 05          | ENQ          | ␅       | ^E    |		    | Enquiry                        | 1 Byte |
-| 0000 0110 | 006   | 6       | 06          | ACK          | ␆       | ^F    |		    | Acknowledgement                | 1 Byte |
-| 0000 0111 | 007   | 7       | 07          | BEL          | ␇       | ^G    | \a 	    | Bell (Alert)                   | 1 Byte |
-| 0000 1000 | 010   | 8       | 08          | BS           | ␈       | ^H    | \b 	    | Backspace                      | 1 Byte |
-| 0000 1001 | 011   | 9       | 09          | HT           | ␉       | ^I    | \t 	    | Horizontal Tab                 | 1 Byte |
-| 0000 1010 | 012   | 10      | 0A          | LF           | ␊       | ^J    | \n 	    | Line Feed                      | 1 Byte |
-| 0000 1011 | 013   | 11      | 0B          | VT           | ␋       | ^K    | \v 	    | Vertical Tab                   | 1 Byte |
-| 0000 1100 | 014   | 12      | 0C          | FF           | ␌       | ^L    | \f 	    | Form Feed                      | 1 Byte |
-| 0000 1101 | 015   | 13      | 0D          | CR           | ␍       | ^M    | \r 	    | Carriage Return                | 1 Byte |
-| 0000 1110 | 016   | 14      | 0E          | SO           | ␎       | ^N    |		    | Shift Out                      | 1 Byte |
-| 0000 1111 | 017   | 15      | 0F          | SI           | ␏       | ^O    |		    | Shift In                       | 1 Byte |
-| 0001 0000 | 020   | 16      | 10          | DLE          | ␐       | ^P    |		    | Data Link Escape               | 1 Byte |
-| 0001 0001 | 021   | 17      | 11          | DC1          | ␑       | ^Q    |		    | Device Control 1 (often XON)   | 1 Byte |
-| 0001 0010 | 022   | 18      | 12          | DC2          | ␒       | ^R    |		    | Device Control 2               | 1 Byte |
-| 0001 0011 | 023   | 19      | 13          | DC3          | ␓       | ^S    |		    | Device Control 3 (often XOFF)  | 1 Byte |
-| 0001 0100 | 024   | 20      | 14          | DC4          | ␔       | ^T    |		    | Device Control 4               | 1 Byte |
-| 0001 0101 | 025   | 21      | 15          | NAK          | ␕       | ^U    |		    | Negative Acknowledgement       | 1 Byte |
-| 0001 0110 | 026   | 22      | 16          | SYN          | ␖       | ^V    |		    | Synchronous Idle               | 1 Byte |
-| 0001 0111 | 027   | 23      | 17          | ETB          | ␗       | ^W    |		    | End of Transmission Block      | 1 Byte |
-| 0001 1000 | 030   | 24      | 18          | CAN          | ␘       | ^X    |		    | Cancel                         | 1 Byte |
-| 0001 1001 | 031   | 25      | 19          | EM           | ␙       | ^Y    |		    | End of Medium                  | 1 Byte |
-| 0001 1010 | 032   | 26      | 1A          | SUB          | ␚       | ^Z    |		    | Substitute                     | 1 Byte |
-| 0001 1011 | 033   | 27      | 1B          | ESC          | ␛ 	     | ^[    | \e       | Escape                         | 1 Byte |
-| 0001 1100 | 034   | 28      | 1C          | FS           | ␜ 	     | ^\    |		    | File Separator                 | 1 Byte |
-| 0001 1101 | 035   | 29      | 1D          | GS           | ␝ 	     | ^]    |		    | Group Separator                | 1 Byte |
-| 0001 1110 | 036   | 30      | 1E          | RS           | ␞ 	     | ^^    |          | Record Separator               | 1 Byte |
-| 0001 1111 | 037   | 31      | 1F          | US           | ␟ 	     | ^_    |		    | Unit Separator                 | 1 Byte |
-| 0111 1111 | 177   | 127     | 7F          | DEL          | ␡       | ^?    |	        | Delete                         | 1 Byte |
-
 ### Printable Characters: 1967
 
 | Binary    | Octal | Decimal | Hexadecimal | Glyph | Size   | 
@@ -171,52 +133,52 @@
 
 | symbol   | size    | Binary | Octal | Decimal | Hexadecimal |
 | -------- | ------- | ------ | ----- | ------- | ----------- |
-| bool     | 4 Bytes |                  428
-| byte     | 4 Bytes |                  436
-| char     | 4 Bytes |                  414
-| float32  | 7 Bytes |                  635
-| float64  | 7 Bytes |                  640
-| float128 | 8 Bytes |                  689
-| isize    | 5 Bytes |                  548
-| int8     | 4 Bytes |                  387
-| int16    | 5 Bytes |                  434
-| int32    | 5 Bytes |                  432
-| int64    | 5 Bytes |                  427
-| int128   | 6 Bytes |                  486
-| map      | 3 Bytes |                  318
-| str      | 3 Bytes |                  345
-| usize    | 5 Bytes |                  560
-| uint8    | 5 Bytes |                  504
-| uint16   | 6 Bytes |                  551
-| uint32   | 6 Bytes |                  549
-| uint64   | 6 Bytes |                  544
-| uint128  | 7 Bytes |                  603
+| bool     | 4 Bytes |        |       | 428     |             |
+| byte     | 4 Bytes |        |       | 436     |             |
+| char     | 4 Bytes |        |       | 414     |             |
+| float32  | 7 Bytes |        |       | 635     |             |
+| float64  | 7 Bytes |        |       | 640     |             |
+| float128 | 8 Bytes |        |       | 689     |             |
+| isize    | 5 Bytes |        |       | 548     |             |
+| int8     | 4 Bytes |        |       | 387     |             |
+| int16    | 5 Bytes |        |       | 434     |             |
+| int32    | 5 Bytes |        |       | 432     |             |
+| int64    | 5 Bytes |        |       | 427     |             |
+| int128   | 6 Bytes |        |       | 486     |             |
+| map      | 3 Bytes |        |       | 318     |             |
+| str      | 3 Bytes |        |       | 345     |             |
+| usize    | 5 Bytes |        |       | 560     |             |
+| uint8    | 5 Bytes |        |       | 504     |             |
+| uint16   | 6 Bytes |        |       | 551     |             |
+| uint32   | 6 Bytes |        |       | 549     |             |
+| uint64   | 6 Bytes |        |       | 544     |             |
+| uint128  | 7 Bytes |        |       | 603     |             |
 
 ### Keywords
 
 | symbol   | size    | Binary | Octal | Decimal | Hexadecimal |
 | -------- | ------- | ------ | ----- | ------- | ----------- |
-| break    | 5 Bytes |
-| case     | 4 Bytes |
-| const    | 5 Bytes |
-| continue | 8 Bytes |
-| default  | 7 Bytes |
-| else     | 4 Bytes |
-| exlcude  | 7 Bytes |
-| export   | 6 Bytes |
-| false    | 5 Bytes |
-| func     | 4 Bytes |
-| if       | 2 Bytes |
-| import   | 6 Bytes |
-| include  | 7 Bytes |
-| return   | 6 Bytes |
-| static   | 6 Bytes |
-| struct   | 6 Bytes |
-| switch   | 6 Bytes |
-| true     | 4 Bytes |
-| var      | 3 Bytes |
-| while    | 5 Bytes |
-| type     | 4 Bytes |
+| break    | 5 Bytes |        |       | 517     |             |
+| case     | 4 Bytes |        |       | 412     |             |
+| const    | 5 Bytes |        |       | 551     |             |
+| continue | 8 Bytes |        |       | 869     |             |
+| default  | 7 Bytes |        |       | 742     |             |
+| else     | 4 Bytes |        |       | 425     |             |
+| exlcude  | 7 Bytes |        |       | 746     |             |
+| export   | 6 Bytes |        |       | 674     |             |
+| false    | 5 Bytes |        |       | 523     |             |
+| func     | 4 Bytes |        |       | 428     |             |
+| if       | 2 Bytes |        |       | 207     |             |
+| import   | 6 Bytes |        |       | 667     |             |
+| include  | 7 Bytes |        |       | 740     |             |
+| return   | 6 Bytes |        |       | 672     |             |
+| static   | 6 Bytes |        |       | 648     |             |
+| struct   | 6 Bytes |        |       | 667     |             |
+| switch   | 6 Bytes |        |       | 658     |             |
+| true     | 4 Bytes |        |       | 448     |             |
+| var      | 3 Bytes |        |       | 329     |             |
+| while    | 5 Bytes |        |       | 537     |             |
+| type     | 4 Bytes |        |       | 450     |             |
 
 ## Binary Format Syntax
 
