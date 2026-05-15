@@ -1,0 +1,27 @@
+// Binary Format
+// Binary Source File: .binary
+// .binary Files Must be Statically Typed
+// .binary Files Cannot be Dynamically Typed
+// .binary Files are Required
+
+// This is a Comment
+
+// Numeral Systems
+//
+// Unary: Base 1
+// Binary: Base 2
+// Trinary: Base 3
+// Quaternary: Base 4
+// Quinary: Base 5
+// Heximal: Base 6
+// Septenary: Base 7
+// Octal: Base 8
+// Nonal: Base 9
+// Decimal: Base 10
+// Hexadecimal: Base 16
+// Duotrigesimal: Base 32
+// Quadrahexagesimal: Base 64
+// Numeral Prefix Syntax: 0prefix, \prefix, #prefix, %prefix
+// Octal Prefixes: 0o, \o, #o, %o
+// Hexadecimal Prefixes: 0x, \x, #x, %x
+
